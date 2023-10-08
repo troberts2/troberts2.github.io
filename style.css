@@ -16,7 +16,7 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(images/background.png);
+    background-image: url(images/background.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -215,6 +215,28 @@ nav ul li{
  .btn:hover{
      background: #ff004f;
  }
+
+ /*------portfolio gallery---------*/
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
 
  /*-------Contact--------*/
  .contact-left{
