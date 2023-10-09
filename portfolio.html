@@ -2,36 +2,95 @@
 <html>
 <head>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://kit.fontawesome.com/cce9c420be.js" crossorigin="anonymous"></script>
 </head>
 <body>
-
-    <div class="gallery">
-        <a target="_blank" href="img_5terre.jpg">
-            <img src="img_5terre.jpg" alt="Cinque Terre" width="600" height="400">
-        </a>
-        <div class="desc">Add a description of the image here</div>
+    <div id="portfolio-page">
+        <div class="container">
+            <nav>
+                <img src="images/logo.jpeg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#portfolio">Portfolio</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+        </div>
     </div>
 
-    <div class="gallery">
-        <a target="_blank" href="img_forest.jpg">
-            <img src="img_forest.jpg" alt="Forest" width="600" height="400">
-        </a>
-        <div class="desc">Add a description of the image here</div>
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-6.png">
+                <div class="layer">
+                    <h3>Depths of Dead</h3>
+                    <p>
+                        This was a really fun project where I developed some more 2D bullet patterns.
+                        You use a grapple hook to both attack enemies and manuever your way around the level.
+                    </p>
+                    <a href="DepthsOfDeadBuild/index.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-5.png">
+                <div class="layer">
+                    <h3>Damocles</h3>
+                    <p>
+                        I tried moving on from 2D games to create my first 3D hack n slash here!
+                    </p>
+                    <a href="DamoclesBuild/index.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-4.png">
+                <div class="layer">
+                    <h3>Jungle Concrete</h3>
+                    <p>
+                        This project was my first city builder/resource management game.
+                        Our prompt for the game was climate change, so we tried to make a game where you balance industrial power with the power of nature
+                    </p>
+                    <a href="JungleConcreteBuild/index.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Floor is Lava</h3>
+                    <p>
+                        This was the first game in which my team tried to implement more than one player on the same system.
+                    </p>
+                    <a href="FloorIsLavaBuild/index.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Hamster Plunge</h3>
+                    <p>
+                        This game really introduced me to a lot of Unity's physics.
+                        I am currently working on a 3D version of this game
+                    </p>
+                    <a href="HamsterPlungeBuild/index.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>ASCII Hell</h3>
+                    <p>
+                        This was my first project where I worked in collaboration with a partner.
+                        I really enjoyed creating the bullet patterns for this game.
+                    </p>
+                    <a href="ASCIIHellBuild/index.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div class="gallery">
-        <a target="_blank" href="img_lights.jpg">
-            <img src="img_lights.jpg" alt="Northern Lights" width="600" height="400">
-        </a>
-        <div class="desc">Add a description of the image here</div>
-    </div>
-
-    <div class="gallery">
-        <a target="_blank" href="img_mountains.jpg">
-            <img src="img_mountains.jpg" alt="Mountains" width="600" height="400">
-        </a>
-        <div class="desc">Add a description of the image here</div>
-    </div>
 
 </body>
 </html>
