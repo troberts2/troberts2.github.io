@@ -1,12 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\ASCIIHellBuild\\TemplateData",
-    "\\DamoclesBuild\\TemplateData",
     "\\DepthsOfDeadBuild",
-    "\\DepthsOfDeadBuild\\TemplateData",
-    "\\FloorIsLavaBuild\\TemplateData",
-    "\\JungleConcreteBuild\\TemplateData"
+    "\\DepthsOfDeadBuild\\TemplateData"
   ],
   "SelectedNode": "\\index.html",
   "PreviewInSolutionExplorer": false
