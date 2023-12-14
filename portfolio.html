@@ -14,6 +14,7 @@
                     <li><a href="index.html#about">About</a></li>
                     <li><a href="index.html#portfolio">Portfolio</a></li>
                     <li><a href="index.html#contact">Contact</a></li>
+                    <li><a href="https://github.com/troberts2"><i class="fa-brands fa-github"></i></a></li>
                     <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
                 <i class="fa-solid fa-bars" onclick="openmenu()"></i>
@@ -22,7 +23,7 @@
     </div>
 
     <div class="container">
-        <h1 class="sub-title">My Work</h1>
+        <h1 class="sub-title">My School Projects</h1>
         <div class="work-list">
             <div class="work">
                 <img src="images/work-6.png">
@@ -61,7 +62,7 @@
                 <div class="layer">
                     <h3>Floor is Lava</h3>
                     <p>
-                        This was the first game in which my team tried to implement more than one player on the same system. 
+                        This was the first game in which my team tried to implement more than one player on the same system.
                         (This one requires a controller per player and has no keyboard inputs)
                     </p>
                     <a href="FloorIsLavaBuild/index.html"><i class="fa-solid fa-up-right-from-square"></i></a>
@@ -92,6 +93,98 @@
         </div>
     </div>
 
+
+    <div class="container">
+        <h1 class="sub-title">My Game Jam Projects</h1>
+        <div class="work-list">
+
+        </div>
+    </div>
+
+    <div class="container">
+        <h1 class="sub-title">My Personal Projects</h1>
+        <div class="work-list">
+
+        </div>
+    </div>
+
+
+    <!-------------Contact---------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> tommyrobertsms@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> (224) - 244 - 2609</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/troberts2"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/-tommy-roberts"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/_tommy_roberts_/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/tommy.roberts.9081323"><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                    <a href="images/ResumeInternship2023GameDesign.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required />
+                        <input type="email" name="Email" placeholder="Your Email" required />
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Tommy Roberts. Made with blood, sweat, and tears by Tommy</p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxpOhELF0Q4Zn3E0vqIglkb2ZpXrrvl2MV_zW62ZqVKsTxyQ1etp5Knw9uWV1LvSJCx/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
 
 </body>
 </html>
