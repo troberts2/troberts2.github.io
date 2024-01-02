@@ -2,8 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\DepthsOfDeadBuild",
-    "\\DepthsOfDeadBuild\\TemplateData"
+    "\\DepthsOfDeadBuild\\TemplateData",
+    "\\RebelsRolloutBuild",
+    "\\RebelsRolloutBuild\\TemplateData"
   ],
-  "SelectedNode": "\\index.html",
+  "SelectedNode": "\\DepthsOfDeadBuild\\TemplateData\\style.css",
   "PreviewInSolutionExplorer": false
 }
