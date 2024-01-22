@@ -1,16 +1,7 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\ASCIIHellBuild\\TemplateData",
-    "\\DamoclesBuild\\TemplateData",
-    "\\DepthsOfDeadBuild\\TemplateData",
-    "\\FloorIsLavaBuild\\TemplateData",
-    "\\HamsterPlungeBuild\\TemplateData",
-    "\\HangryEveBuild",
-    "\\HangryEveBuild\\TemplateData",
-    "\\JungleConcreteBuild\\TemplateData",
-    "\\RebelsRolloutBuild\\TemplateData"
+    ""
   ],
-  "SelectedNode": "\\HangryEveBuild\\index.html",
+  "SelectedNode": "\\ASCIIHellBuild",
   "PreviewInSolutionExplorer": false
 }
