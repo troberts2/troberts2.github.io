@@ -1,6 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\CheeseChaseBuild",
+    "\\CheeseChaseBuild\\TemplateData",
+    "\\RebelsRolloutBuild",
+    "\\RebelsRolloutBuild\\TemplateData",
+    "\\webGLBuild"
   ],
   "SelectedNode": "\\index.html",
   "PreviewInSolutionExplorer": false
