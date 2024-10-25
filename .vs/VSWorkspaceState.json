@@ -1,11 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\ASCIIHellBuild",
     "\\images",
     "\\images\\CheeseChase",
-    "\\images\\old"
+    "\\images\\old",
+    "\\images\\RecycleGame"
   ],
-  "SelectedNode": "\\BuildALair.html",
+  "SelectedNode": "\\RebelsRolloutBuild",
   "PreviewInSolutionExplorer": false
 }
