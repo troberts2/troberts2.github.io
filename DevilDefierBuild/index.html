@@ -8,53 +8,54 @@
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
   <body>
-      <div id="header">
-          <div class="container">
-              <nav>
-                  <ul id="sidemenu">
-                      <li><a href="https://troberts2.github.io">Home</a></li>
-                      <li><a href="https://troberts2.github.io/#about">About</a></li>
-                      <li><a href="https://troberts2.github.io/portfolio.html">Portfolio</a></li>
-                      <li><a href="https://troberts2.github.io/#contact">Contact</a></li>
-                      <li><a href="https://github.com/troberts2"><i class="fa-brands fa-github"></i></a></li>
-                      <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-                  </ul>
-                  <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-              </nav>
-          </div>
+    <div id="header">
+      <div class="container">
+          <nav>
+              <ul id="sidemenu">
+                  <li><a href="https://troberts2.github.io">Home</a></li>
+                  <li><a href="https://troberts2.github.io/#about">About</a></li>
+                  <li><a href="https://troberts2.github.io/portfolio.html">Portfolio</a></li>
+                  <li><a href="https://troberts2.github.io/#contact">Contact</a></li>
+                  <li><a href="https://github.com/troberts2"><i class="fa-brands fa-github"></i></a></li>
+                  <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+              </ul>
+              <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+          </nav>
       </div>
-      <div id="unity-container" class="unity-desktop">
-          <canvas id="unity-canvas" width=616 height=540></canvas>
-          <div id="unity-loading-bar">
-              <div id="unity-logo"></div>
-              <div id="unity-progress-bar-empty">
-                  <div id="unity-progress-bar-full"></div>
-              </div>
-          </div>
-          <div id="unity-warning"> </div>
+  </div>
+    <div id="unity-container" class="unity-desktop">
+      <canvas id="unity-canvas" width=616 height=540 tabindex="-1"></canvas>
+      <div id="unity-loading-bar">
+        <div id="unity-logo"></div>
+        <div id="unity-progress-bar-empty">
+          <div id="unity-progress-bar-full"></div>
+        </div>
       </div>
+      <div id="unity-warning"> </div>
       <div id="hightlight">
-          <div class="container">
-              <h1 class="sub-title">Devil Defier</h1>
-              <div class="row">
-                  <div class="about-col-1">
-                      <img src="TemplateData/DevilDefier.png">
-                  </div>
-                  <div class="about-col-2">
-                      <h1 class="sub-title">About This Project</h1>
-                      <p>
-                          Devil Defier was a week long game jam with the theme "Everything is a Remix". I had a lot of fun working on this project. While I originally intended
-                          to work completely solo on this project, after posting about it in my Discord, a couple friends contributed. One of my friends who is great at composing 
-                          music decided to cook up an arcade style song for the game, and another friend made all of the sprites for me. Of course with that said, I worked on every 
-                          other part of this game, and made sure it was all put together in the end.
-                      </p>
-                  </div>
-              </div>
-          </div>
-      </div>
-      <div class="copyright">
-          <p>Copyright © Tommy Roberts. Made with blood, sweat, and tears by Tommy</p>
-      </div>
+        <div class="container">
+            <h1 class="sub-title">Soul Searcher</h1>
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="TemplateData/SoulSearcher.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About This Project</h1>
+                    <p>
+                        Soul Searcher was a great 48 hour long game jam I participated in with a friend. I was the main programmer and artist for the game while my friend 
+                        created the levels and soundfx. For a quick game jam, we had everything we wanted to add implemented within a couple hours of the submission deadline. 
+                        Unfortunately my school, who hosted the jam, would not release the rankings to spare people feelings. I also did not notice that almost all of the objects 
+                        in the game were missing their glow texture in the jam submission (I later fixed this). It was a visual effect I was proud to have learned and implemented in 
+                        the time I was working on the game.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Tommy Roberts. Made with blood, sweat, and tears by Tommy</p>
+    </div>
+    </div>
     <script>
 
       var container = document.querySelector("#unity-container");
@@ -89,15 +90,15 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/WebGLBuild.loader.js";
+      var loaderUrl = buildUrl + "/WebsiteVersion.loader.js";
       var config = {
-        dataUrl: buildUrl + "/WebGLBuild.data",
-        frameworkUrl: buildUrl + "/WebGLBuild.framework.js",
-        codeUrl: buildUrl + "/WebGLBuild.wasm",
+        dataUrl: buildUrl + "/WebsiteVersion.data.gz",
+        frameworkUrl: buildUrl + "/WebsiteVersion.framework.js.gz",
+        codeUrl: buildUrl + "/WebsiteVersion.wasm.gz",
         streamingAssetsUrl: "StreamingAssets",
-        companyName: "DefaultCompany",
-        productName: "Soul Searcher",
-        productVersion: "1.0",
+        companyName: "troberts2",
+        productName: "Devil Defier",
+        productVersion: "1.1",
         showBanner: unityShowBanner,
       };
 
@@ -107,6 +108,15 @@
       // happening inside the engine, and you would instead like to size up
       // the canvas DOM size and WebGL render target sizes yourself.
       // config.matchWebGLToCanvasSize = false;
+
+      // If you would like all file writes inside Unity Application.persistentDataPath
+      // directory to automatically persist so that the contents are remembered when
+      // the user revisits the site the next time, uncomment the following line:
+      // config.autoSyncPersistentDataPath = true;
+      // This autosyncing is currently not the default behavior to avoid regressing
+      // existing user projects that might rely on the earlier manual
+      // JS_FileSystem_Sync() behavior, but in future Unity version, this will be
+      // expected to change.
 
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
         // Mobile device style: fill the whole browser client area with the game canvas:
