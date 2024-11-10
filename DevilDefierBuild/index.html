@@ -8,21 +8,6 @@
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
   <body>
-    <div id="header">
-      <div class="container">
-          <nav>
-              <ul id="sidemenu">
-                  <li><a href="https://troberts2.github.io">Home</a></li>
-                  <li><a href="https://troberts2.github.io/#about">About</a></li>
-                  <li><a href="https://troberts2.github.io/portfolio.html">Portfolio</a></li>
-                  <li><a href="https://troberts2.github.io/#contact">Contact</a></li>
-                  <li><a href="https://github.com/troberts2"><i class="fa-brands fa-github"></i></a></li>
-                  <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-              </ul>
-              <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-          </nav>
-      </div>
-  </div>
     <div id="unity-container" class="unity-desktop">
       <canvas id="unity-canvas" width=616 height=540 tabindex="-1"></canvas>
       <div id="unity-loading-bar">
@@ -91,9 +76,9 @@
       var buildUrl = "Build";
       var loaderUrl = buildUrl + "/WebsiteVersion.loader.js";
       var config = {
-        dataUrl: buildUrl + "/WebsiteVersion.data.br",
-        frameworkUrl: buildUrl + "/WebsiteVersion.framework.js.br",
-        codeUrl: buildUrl + "/WebsiteVersion.wasm.br",
+        dataUrl: buildUrl + "/WebsiteVersion.data",
+        frameworkUrl: buildUrl + "/WebsiteVersion.framework.js",
+        codeUrl: buildUrl + "/WebsiteVersion.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "troberts2",
         productName: "Devil Defier",
