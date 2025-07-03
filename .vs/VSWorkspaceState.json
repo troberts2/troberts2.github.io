@@ -1,16 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\AliensAboardBuild",
     "\\AliensAboardBuild\\Build",
     "\\AliensAboardBuild\\TemplateData",
-    "\\CATInterviewBuild",
-    "\\CATInterviewBuild\\TemplateData",
-    "\\CatsFeverDreamBuild",
-    "\\images\\CheeseChase",
-    "\\images\\old",
-    "\\images\\RecycleGame"
+    "\\CATInterviewBuild\\TemplateData"
   ],
-  "SelectedNode": "\\CatsFeverDreamBuild\\index.html",
+  "SelectedNode": "\\index.html",
   "PreviewInSolutionExplorer": false
 }
